@@ -56,17 +56,50 @@ a{
     width: 100%;
 }
 
-div h2, div p, div section{
-    max-width: 895px;
+div h2, div p{
+    max-width: 896px;
     margin: 0 auto 0 auto;
 }
+div section{
+    max-width: 912px;
+    margin: 0 auto;
+}
 article{
-    max-width: 895px;
+    max-width: 912px;
     margin: 0 auto 0 auto;
 }
 
 .top-bar{
     background-color: rgb(221, 240, 255);
+}
+.top-bar h2{
+    font-size: 36px;
+    padding: 21px 0px 12px 0px;
+}
+.top-bar p{
+    font-size: 20px;
+    padding: 6px 0px 20px 0px;
+}
+
+.game-summary{
+    display: flex;
+}
+.game-summary .img-container{
+    max-width: 300px;
+    margin: 20px 20px 20px 0;
+}
+.text-container{
+    margin: 20px 0 20px 10;
+}
+.text-container h3{
+    font-size: 36px;
+    padding: 21px 0px 12px 0px;
+    margin: 37px 0 0 5px;
+}
+.text-container p{
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    margin: 0 0 0 5px;
 }
 
 
