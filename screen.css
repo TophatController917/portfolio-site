@@ -61,11 +61,11 @@ div h2, div p{
     margin: 0 auto 0 auto;
 }
 div section{
-    max-width: 912px;
+    max-width: 932px;
     margin: 0 auto;
 }
 article{
-    max-width: 912px;
+    max-width: 932px;
     margin: 0 auto 0 auto;
 }
 
@@ -83,13 +83,15 @@ article{
 
 .game-summary{
     display: flex;
+    max-width: 952px;
+    margin: 0 auto;
 }
 .game-summary .img-container{
     max-width: 300px;
-    margin: 20px 20px 20px 0;
+    margin: 20px
 }
 .text-container{
-    margin: 20px 0 20px 10;
+    margin: 20px 10 20px 10;
 }
 .text-container h3{
     font-size: 36px;
