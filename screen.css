@@ -6,13 +6,22 @@ body{
 .page-nav-header{
     background-color: rgb(33, 45, 64);
     color: rgb(221, 240, 255);
-    display: block;
+    display: flex;
     position: sticky;
     top: 0%;
 }
 
+.page-nav-header .img-container{
+    width: 7%;
+    padding: 1%;
+    margin-right: 10px;
+}
+
+.page-nav-header 
 
 
-
+.img-container img{
+    width: 100%;
+}
 
 /* Add screen styles below */
