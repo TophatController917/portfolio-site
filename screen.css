@@ -1,27 +1,69 @@
 body{
     margin: 0px;
-    font-size: larger;
+    font-size: 19px;
+    font-family: sans-serif;
+    background-color: gray;
 }
-
+a{
+    color: rgb(221, 240, 255);
+    text-decoration: none;
+}
 .page-nav-header{
     background-color: rgb(33, 45, 64);
     color: rgb(221, 240, 255);
     display: flex;
     position: sticky;
     top: 0%;
-}
+    height: fit-content;
+    justify-content: space-between;
 
+}
+.page-nav-header .img-container, .page-nav-header .name-header, .page-nav-header nav{
+    display: inline-block;
+}
 .page-nav-header .img-container{
-    width: 7%;
-    padding: 1%;
-    margin-right: 10px;
+    width: 99px;
+    padding: 3px 25px 0 20px;
+    margin: 20px;
 }
-
-.page-nav-header 
-
-
+.page-nav-header .name-header{
+    font-size: 100%;
+    margin: auto 0 auto 30px;
+}
+.page-nav-header .name-header h1{
+    font-size: 52px;
+    font-weight: bold;
+    margin: 7px 0 2px 9px;
+}
+.page-nav-header .name-header p{
+    font-size: 19px;
+    font-weight: bold;
+    margin: 5px 0 0 9px ;
+}
+.page-nav-header nav{
+    width: 50%;
+    margin: auto 0 auto auto;
+    text-align: right;
+}
+.page-nav-header nav ul{
+    justify-content: right;
+}
+.page-nav-header nav ul li{
+    display: inline-block;
+    margin: 14px 10px 10px 10px;
+}
 .img-container img{
     width: 100%;
 }
+
+div{
+    max-width: 895px;
+    margin: 0 auto 0 auto;
+}
+article{
+    max-width: 895px;
+    margin: 0 auto 0 auto;
+}
+
 
 /* Add screen styles below */
