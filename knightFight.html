@@ -28,71 +28,118 @@
     <script src="index.js"></script>
 
     <div class="top-bar">
-        <img src="" alt="">
+      <div class="img-container">
+        <a href="https://tophatcontroller.itch.io/knight-fight"><img src="KnightFightThumbnail.png" alt=""></a>
+      </div>
+      <div class="text-container">
         <h2>Project Overview</h2>
         <p>In Knight Fight, players choose from a selection of four unique knights, each with their own play style and abilities, and do battle with one another in fast-paced combat designed to reward skill while still being easy to hop into.</p>
         <p>I served as the project's gameplay and systems programmer, coding the movement, character abilities, controller support and local multiplayer. I also worked as a designer for the 4 different knights and their abilities, as well as universal combat features.</p>
+      </div>
     </div>
-    <article id="project-synopsis">
+    <article class="project-synopsis">
         <h2>My Contributions to the Project:</h2>
-        <section>
+        <section class="contribution-block-type2">
+          <div class="contribution-overview">
             <h3>Designed Combat Features</h3>
             <p>I worked to come up with a combat system that created intense back-and-forth gameplay, and would allow long-term players to develop skill while still being simple and easy to learn for newcomers. We settled on two core design pillars:</p>
-            <section>
-                <h4>Non-Stop Action</h4>
-                <p>One of the most frustrating aspects of traditional fighting games is when a player is caught in a long combo and is stuck waiting until they get  their turn back. Therefore, to create that back-and-forth combat, we decided that players should never need to wait more than three seconds before they can perform their next action.</p>
-                <p>This three second rule manifested in how we designed attacks (quick to  recover, with any delays coming on startup instead of recovery) and how  we designed knockback (immediate movement that pushed away from the  damage source, with invulnerability to prevent long combos).</p>
-            </section>
-            <section>
-                <h4>Complexity from Simplicity</h4>
-                <p>Gamers, rather notoriously, do not like tutorials. It is therefore quite hard to make a game that has the complexity necessary to allow skill development while also being easy to hop into for the first time. Our solution to this problem was to design every character to be a set of individually simple building blocks—universal movement with only three simple skills and two basic attacks—that we could create complex gameplay from.</p>
-                <p>Each skill was designed to be immediately obvious in its use, which meant that even a new player would be able to figure out how they were supposed to play their character. The depth came from learning the nuances of how these skills would interact with each other, and the different resource and opportunity costs of using them.</p>
-            </section>
+          </div>
+          <section class="contribution-subblock">
+            <div class="text-container">
+              <h4>Non-Stop Action</h4>
+              <p>One of the most frustrating aspects of traditional fighting games is when a player is caught in a long combo and is stuck waiting until they get  their turn back. Therefore, to create that back-and-forth combat, we decided that players should never need to wait more than three seconds before they can perform their next action.</p>
+              <p>This three second rule manifested in how we designed attacks (quick to  recover, with any delays coming on startup instead of recovery) and how  we designed knockback (immediate movement that pushed away from the  damage source, with invulnerability to prevent long combos).</p>
+            </div>
+          </section>
+          <section class="contribution-subblock">
+            <div class="text-container">
+              <h4>Complexity from Simplicity</h4>
+              <p>Gamers, rather notoriously, do not like tutorials. It is therefore quite hard to make a game that has the complexity necessary to allow skill development while also being easy to hop into for the first time. Our solution to this problem was to design every character to be a set of individually simple building blocks—universal movement with only three simple skills and two basic attacks—that we could create complex gameplay from.</p>
+              <p>Each skill was designed to be immediately obvious in its use, which meant that even a new player would be able to figure out how they were supposed to play their character. The depth came from learning the nuances of how these skills would interact with each other, and the different resource and opportunity costs of using them.</p>
+            </div>
+              
+          </section>
         </section>
-        <section>
-            <img src="" alt="">
+        <section class="contribution-block">
+          <div class="img-container-cropped">
+            
+            <img src="KnightFightControls.gif" alt="">
+            
+          </div>
+          <div class="text-container">
             <h3>Programmed the Core Mechanics</h3>
             <p>I created a modular character framework that allowed for easy creation of different characters with unique abilities, while also having intuitive and designer-friendly customization for universal things, such as movement.</p>
             <p>The character base class served as a shell with the base movement, and open slots for each skill and attack, allowing each knight to simply inherit from the base class and fill in those slots with their unique actions.</p>
             <p>Additionally, this modular structure meant that knights with unique abilities outside of those slots, such as the Caster, could have their abilities implemented easily without interfering with other knights.</p>
+          </div>
+            
         </section>
-        <section>
-            <img src="" alt="">
+        <section class="contribution-block">
+          <div class="text-container">
             <h3>Developed Controller Support</h3>
             <p>In addition to the character framework, I also developed controller support using Unity's new input system by creating an input asset with a binding for each of Knight Fight's actions, which also allows for easy remapping.</p>
             <p>In addition to easy creation of new characters, the character framework I developed was designed to be easily used in conjunction with this input asset, and has code to handle the slight discrepancies between keyboard and controller input, making all controllers a smooth experience.</p>
             <p>Additionally, this modular structure meant that knights with unique abilities outside of those slots, such as the Caster, could have their abilities implemented easily without interfering with other knights.</p>
+          </div>
+          <div class="img-container">
+            <img src="KnightFightInputs.png" alt="">
+          </div>
         </section>
-        <section>
-            <img src="" alt="">
+        <section class="contribution-block">
+            <div class="img-container">
+
+            </div>
+            <div class="text-container">
+
+            </div>
             <h3>Created Local Multiplayer</h3>
             <p>I also handled the game's multiplayer, once again employing the utilities provided by Unity's new input system to allow for simple and unlimited local multiplayer.</p>
             <p>One of the goals that we had when creating Knight Fight was to make it easy for people to hop into with friends, and to that end, I designed a multiplayer system with a tracking, reactive camera and streamlined joining where all it takes for another player to join is for them to connect a controller and press start.</p>
             <p>Additionally, this modular structure meant that knights with unique abilities outside of those slots, such as the Caster, could have their abilities implemented easily without interfering with other knights.</p>
         </section>
-        <section>
+        <section class="contribution-block">
             <h3>What I learned</h3>
-            <section>
+            <section class="contribution-subblock">
+              <div class="img-container">
+
+            </div>
+            <div class="text-container">
+
+            </div>
                 <h4>Stay in Scope!</h4>
                 <p>The biggest challenge that my partner and I encountered came in the form of time constraints. Our original plan for the game would have been almost 100 hours of work, which we quickly realized was far too much for us to complete in five weeks given the team's availability and resources.</p>
                 <p>We ended up cutting a significant amount of content in order to finish the project on time, and that helped teach me good ways to determine what features are okay to cut, as well as when and how one should cut during development. Working on this project taught me a plethora of valuable lessons in how to manage time.</p>
             </section>
-            <section>
+            <section class="contribution-subblock">
+              <div class="img-container">
+
+            </div>
+            <div class="text-container">
+
+            </div>
                 <h4>Learn as you Work</h4>
                 <p>Knight Fight was quite helpful in teaching me how to learn as I worked. Many times during development I had to do work outside of my realm of expertise, or use systems I had never used before.</p>
                 <p>Overcoming these hurdles taught me good ways to both hone my knowledge while I wasn't actively working, and learn new systems during the process of development, and I consider myself a much more well-rounded developer as a result.</p>
             </section>
-            <section>
+            <section class="contribution-subblock">
+              <div class="img-container">
+
+            </div>
+            <div class="text-container">
+
+            </div>
                 <h4>Team Composition is Key</h4>
                 <p>Another important lesson I learned from working on Knight Fight is how significant it is to have a well-rounded team when developing a game. With my partner and I being the only people working on the project, we didn't have anyone for art, UI or playtesting, which exacerbated our existing time problems.</p>
                 <p>This project served as a great lesson in the importance of getting a well-rounded team, and I learned a lot about how to evaluate what is and isn't feasible to develop based on the skills your team members have.</p>
             </section>
         </section>
     </article>
-    <div class="footer">
-      <a href="mailto:beckett.mckeough@gmail.com">Email: beckett.mckeough@gmail.com</a>
-      <a href="https://tophatcontroller.itch.io/">Itch: tophatcontroller</a>
-    </div>
+    <footer>
+      <div class="text-container">
+        <a href="mailto:beckett.mckeough@gmail.com">Email: beckett.mckeough@gmail.com</a>
+        <a href="https://tophatcontroller.itch.io/">Itch: tophatcontroller.itch.io</a>
+      </div>
+    </footer>
 
   </body>
 </html>
