@@ -56,13 +56,17 @@ a{
     width: 100%;
 }
 
-div{
+div h2, div p, div section{
     max-width: 895px;
     margin: 0 auto 0 auto;
 }
 article{
     max-width: 895px;
     margin: 0 auto 0 auto;
+}
+
+.top-bar{
+    background-color: rgb(221, 240, 255);
 }
 
 
