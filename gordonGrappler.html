@@ -39,12 +39,12 @@
     </div>
     <article class="project-synopsis">
       <h2>My Contributions to the Project:</h2>
-      <section class="contribution-block-type2">
+      <div class="contribution-block-type2">
         <div class="contribution-subblock">
           <h3>Designed the Core Mechanic</h3>
           <p>I came up with the idea to center the game around a grappling hook, and iterated upon that concept to refine it into the mechanic that it became. Some design challenges and their solutions included:</p>
         </div>
-        <section class="contribution-subblock-type2">
+        <div class="contribution-subblock-type2">
           <div class="img-container-cropped">
             <img src="GordonGrapplerGameplay.gif" alt="">
           </div>
@@ -54,8 +54,8 @@
             <p>This tied the grappling hook more tightly to the core gameplay loop by making it dramatically faster to grab ingredients with the hook, and also made the game flow much more smoothly, as getting an ingredient was no longer a huge commitment.</p>
           </div>
             
-        </section>
-        <section class="contribution-subblock-type2">
+        </div>
+        <div class="contribution-subblock-type2">
           <div class="text-container">
             <p>The speed of the game was too fast for players to keep up with, and a huge backlog of orders quickly piled up during playtests. We could have simply slowed the speed of the game, but I thought a better idea would be to allow the player to act faster.</p>
             <p>Most of the backlog came as the result of the player needing to run to the levers and back every time they wanted to cook a meal, which wasted precious seconds that added up quickly.</p>
@@ -64,14 +64,14 @@
           <div class="img-container-cropped">
             <img src="GordonGrapplerLever.gif" alt="">
           </div>
-        </section>
-        </section>
-        <section class="contribution-block-type2">
+        </div>
+      </div>
+        <div class="contribution-block-type2">
           <div class="contribution-subblock">
             <h3>Programmed the Grappling Hook and Player Movement</h3>
             <p>I developed a movement system for the player that utilized Unity's 2D physics system, and a modular grappling hook that could interact with the environment.</p>
           </div>
-          <section class="contribution-subblock-type2">
+          <div class="contribution-subblock-type2">
             <div class="img-container">
               <img src="GordonGrapplerControl.png" alt="">
             </div>
@@ -80,8 +80,8 @@
               <p>The top speed, acceleration and friction values were made easily editable in the Unity Inspector so designers could fine-tune movement to get the perfect feel.</p>
               <p>Integrating the movement with Unity's 2D physics also meant that designers could easily change the mass and gravity of the object and movement would respond accordingly with no edits needed.</p>
             </div>
-          </section>
-          <section class="contribution-subblock-type2">
+          </div>
+          <div class="contribution-subblock-type2">
             <div class="text-container">
               <p>To create the grappling hook, I made a modular script and prefab that could be attached to any object and would work on its own. This meant that designers were free to make any edits to the player's natural movement without altering the grappling hook's movement, and vice versa.</p>
               <p>The grappling hook could additionally detect what objects it was attaching to, which enabled it to perform a variety of tasks, including: moving the player, moving certain interactable objects, and calling a function on other interactable objects.</p>
@@ -89,9 +89,9 @@
             <div class="img-container">
               <img src="GordonGrapplerCode.png" alt="">
             </div>
-          </section>
-        </section>
-        <section class="contribution-block-type2">
+          </div>
+        </div>
+        <div class="contribution-block-type2">
           <h3>What I learned</h3>
           <p>While this wasn't my first project, it was the first project that I made for a Game Jam. I hadn't dealt with a 48-hour deadline, and I was meeting most of the people on my team for the first time. This experience gave me valuable skills:</p>
           <section class="contribution-subblock">
@@ -110,7 +110,7 @@
               <p>Additionally, understanding task interdependencies allowed me to prioritize work that would unblock my teammates, making the group as a whole more efficient.</p>
             </div>
           </section>
-        </section>
+        </div>
     </article>
     <footer>
       <div class="text-container">

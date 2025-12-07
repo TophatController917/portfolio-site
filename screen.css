@@ -70,7 +70,7 @@ div h2, div p{
     max-width: 896px;
     margin: 0 auto 0 auto;
 }
-div section{
+div section, div div{
     max-width: 932px;
     margin: 0 auto;
 }
@@ -283,14 +283,16 @@ footer a{
     nav ul li{
         margin: 2px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, #about{
+    .game-summary, .game-summary-borderless, .contribution-block, .contribution-block-type2, #about{
         max-width: 400px;
+        margin: 0 auto;
     }
     .text-container{
         margin: 5px;
     }
     .top-bar .text-container{
-        max-width: 320px;
+        max-width: 260px;
+        margin: auto;
     }
     .top-bar .text-container h2, h2{
         padding: 0px;
@@ -383,8 +385,9 @@ footer a{
     nav ul li{
         margin: 5px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, #about{
+    .game-summary, .game-summary-borderless, .contribution-block, .contribution-block-type2, #about{
         max-width: 500px;
+        margin: 0 auto;
     }
     .text-container{
         margin: 5px;
@@ -481,8 +484,9 @@ footer a{
     nav ul li{
         margin: 4px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, .contribution-block-type2, #about{
         max-width: 684px;
+        margin: 0 auto;
     }
     .text-container{
         margin: 5px;
@@ -559,8 +563,9 @@ footer a{
     .page-nav-header{
         font-size: 17px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, .contribution-block-type2, #about{
         max-width: 912px;
+        margin: 0 auto;
     }
     .text-container{
         margin: 10px;
@@ -588,13 +593,14 @@ footer a{
     .img-container, .top-bar .img-container{
         min-width: 300px;
         width: 300px;
+        margin: auto 15px;
     }
     .img-container-cropped, .top-bar .img-container-cropped{
         min-width: 300px;
         min-height: 250px;
         width: 300px;
         height: 250px;
-        margin: 20px;
+        margin: auto 20px;
     }
     .page-nav-header .img-container{
         padding: 0;
@@ -604,8 +610,9 @@ footer a{
     .name-header{
         margin: auto 0;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, .contribution-block-type2, #about{
         max-width: 952px;
+        margin: 0 auto;
     }
     .text-container{
         margin: 20px 10px 20px 20px;
@@ -626,7 +633,7 @@ footer a{
     }
     .text-container p, div p, p{
         padding: 0px;
-        margin: 10px;
+        margin: 10px auto;
     }
     
 }
@@ -639,7 +646,7 @@ footer a{
         min-height: 300px;
         width: 300px;
         height: 300px;
-        margin: 20px;
+        margin: auto 20px;
     }
     .page-nav-header .img-container{
         width: 99px;
