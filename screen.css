@@ -183,8 +183,20 @@ article{
     margin: auto 0 auto 20px;
 }
 
-
-
+.img-container-type2{
+    min-width: 500px;
+    margin: auto 20px auto 0;
+}
+.img-container-type2 img{
+    width: 100%;
+}
+#about-introduction{
+    display: flex;
+    margin: 20px;
+}
+#about-body{
+    margin: 20px;
+}
 
 
 footer{
