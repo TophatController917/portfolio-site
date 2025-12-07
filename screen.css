@@ -83,7 +83,6 @@ article{
     margin: 20px 10px 20px 20px;
 }
 .text-container h3{
-    font-size: 36px;
     padding: 21px 0px 12px 0px;
     margin: 6px 0 0 5px;
 }
@@ -107,7 +106,6 @@ article{
     margin: auto 0 auto 20px;
 }
 .top-bar .text-container h2{
-    font-size: 36px;
     padding: 21px 0px 12px 0px;
 }
 .top-bar .text-container p{
@@ -131,11 +129,11 @@ article{
     margin: 0 auto;
 }
 
-.project-synopsis h2{
+h2{
     text-align: center;
     font-size: 36px;
 }
-.contribution-block h3, .contribution-subblock h3, .contribution-block-type2 h3{
+h3{
     text-align: center;
     font-size: 32px;
 }
@@ -163,7 +161,7 @@ article{
     max-width: 95%;
     margin: 0 auto;
 }
-.contribution-subblock h4{
+h4{
     font-size: 24px;
     margin: 0;
 }
@@ -211,63 +209,334 @@ footer a{
 }
 
 /* Add screen styles below */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 600px) {
     body{
-        font-size: 17px;
+        font-size: 10px;
+    }
+    .img-container, .top-bar .img-container{
+        min-width: 125px;
+        width: 125px;
+    }
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 150px;
+        min-height: 150px;
+        width: 150px;
+        height: 150px;
+        margin: auto 5px;
+    }
+    .img-container-type2{
+        min-width: 150px;
+        min-height: 200px;
+        width: 150px;
+        height: 225px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .img-container-type2 img{
+        margin: 0 0 0 -56%;
+        height: auto;
+        width: 300px;
+    }
+    .contribution-subblock-type2 .img-container{
+        min-width: 175px;
+        min-height: 200px;
+        width: 175px;
+        height: 200px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .contribution-subblock-type2 .img-container img{
+        height: auto;
+        width: 350px;
+    }
+    .page-nav-header{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 66px;
+        min-width: 66px;
+        margin: auto 20px;
+        grid-row-end: span 2;
+    }
+    .name-header{
+        margin: auto 0px;
+        vertical-align: top;
+        grid-column-start: 2;
+    }
+    nav{
+        grid-column-start: 2;
+    }
+    .name-header h1{
+        font-size: 24px;
+    }
+    .name-header p {
+        font-size: 10px;
+    }
+    nav ul{
+        margin: 4px 0 0;
+    }
+    nav ul li{
+        margin: 5px;
+    }
+    .game-summary, .game-summary-borderless, .contribution-block, article{
+        max-width: 400px;
+    }
+    .text-container{
+        margin: 5px;
+    }
+    .top-bar .text-container{
+        max-width: 320px;
+    }
+    .top-bar .text-container h2, h2{
+        padding: 0px;
+        font-size: 15px;
+    }
+    .text-container h3, h3{
+        font-size: 13px;
+        padding: 0;
+        margin: 14px;
+    }
+    h4{
+        font-size: 12px;
+    }
+    .top-bar .text-container p, .text-container p, div p, p{
+        padding: 0px;
+        margin: 5px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+    .img-container, .top-bar .img-container{
+        min-width: 225px;
+        width: 225px;
+    }
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 225px;
+        min-height: 225px;
+        width: 225px;
+        height: 225px;
+        margin: auto 5px;
+    }
+    .img-container-type2{
+        min-width: 250px;
+        min-height: 300px;
+        width: 250px;
+        height: 375px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .img-container-type2 img{
+        margin: 0 0 0 -56%;
+        height: auto;
+        width: 500px;
+    }
+    .contribution-subblock-type2 .img-container{
+        min-width: 200px;
+        min-height: 200px;
+        width: 200px;
+        height: 200px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .contribution-subblock-type2 .img-container img{
+        height: auto;
+        width: 350px;
+    }
+    .page-nav-header{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
     }
     .page-nav-header .img-container{
         padding: 0;
         width: 77px;
         min-width: 77px;
-        margin: 15px;
+        margin: auto 20px;
+        grid-row-end: span 2;
     }
     .name-header{
-        margin: auto 0;
+        margin: auto 0px;
+        vertical-align: top;
+        grid-column-start: 2;
+    }
+    nav{
+        grid-column-start: 2;
     }
     .name-header h1{
-        font-size: 32px;
+        font-size: 34px;
+    }
+    .name-header p {
+        font-size: 14px;
+    }
+    nav ul{
+        margin: 4px 0 0;
+    }
+    nav ul li{
+        margin: 5px;
+    }
+    .game-summary, .game-summary-borderless, .contribution-block, article{
+        max-width: 500px;
+    }
+    .text-container{
+        margin: 5px;
+    }
+    .top-bar .text-container{
+        max-width: 320px;
+    }
+    .top-bar .text-container h2, h2{
+        padding: 0px;
+        font-size: 20px;
+    }
+    .text-container h3, h3{
+        font-size: 18px;
+        padding: 0;
+        margin: 10px;
+    }
+    h4{
+        font-size: 16px;
+    }
+    .top-bar .text-container p, .text-container p, div p, p{
+        padding: 0px;
+        margin: 5px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 17px;
+    }
+    .img-container, .top-bar .img-container{
+        min-width: 225px;
+        width: 225px;
+    }
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 250px;
+        min-height: 250px;
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+    }
+    .img-container-type2{
+        min-width: 300px;
+        min-height: 300px;
+        width: 300px;
+        height: 325px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .img-container-type2 img{
+        margin: 0 0 0 -22%;
+        height: auto;
+        width: 420px;
+    }
+    .contribution-subblock-type2 .img-container{
+        min-width: 275px;
+        min-height: 200px;
+        width: 275px;
+        height: 200px;
+        margin: auto 10px;
+        overflow: hidden;
+    }
+    .contribution-subblock-type2 .img-container img{
+        height: auto;
+        width: 350px;
+    }
+    .page-nav-header{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 99px;
+        min-width: 77px;
+        margin: auto 20px;
+        grid-row-end: span 2;
+    }
+    .name-header{
+        margin: auto 0px;
+        vertical-align: top;
+        grid-column-start: 2;
+    }
+    nav{
+        grid-column-start: 2;
+    }
+    .name-header h1{
+        font-size: 42px;
     }
     .name-header p {
         font-size: 17px;
     }
-    .page-nav-header{
-        font-size: 17px;
+    nav ul{
+        margin: 4px 0 0;
     }
     nav ul li{
-        margin: 2px;
+        margin: 4px;
     }
-    .game-summary, .game-summary-borderless{
-        max-width: 734px;
+    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
+        max-width: 684px;
+    }
+    .text-container{
+        margin: 5px;
+    }
+    .top-bar .text-container{
+        max-width: 480px;
+    }
+    .top-bar .text-container h2, h2{
+        padding: 0px;
+        font-size: 26px;
+    }
+    .text-container h3, h3{
+        font-size: 22px;
+        padding: 0;
+        margin: 10px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    .top-bar .text-container p, .text-container p, div p, p{
+        padding: 0px;
+        margin: 5px;
     }
 }
 @media only screen and (min-width: 992px) {
     body{
         font-size: 17px;
     }
-    .page-nav-header .img-container{
-        padding: 0;
-        width: 88px;
-        margin: 15px;
+    .img-container, .top-bar .img-container{
+        min-width: 250px;
+        width: 250px;
     }
-    .name-header{
-        margin: auto 0;
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 250px;
+        min-height: 250px;
+        width: 250px;
+        height: 250px;
+        margin: 20px;
     }
-    .name-header h1{
-        font-size: 38px;
+    .img-container-type2{
+        min-width: 500px;
+        width: 500;
+        min-height: 0;
+        height: auto;
+        margin: auto 20px;
     }
-    nav ul li{
-        margin: 2px;
+    .img-container-type2 img{
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
-    #wide-nav-list{
-        display: none;
+    .contribution-subblock-type2 .img-container{
+        width: 300px;
+        min-width: 350px;
+        margin: auto 0 auto 20px;
     }
-    #layered-nav-list{
-        display: inline-block;
-    }
-}
-@media only screen and (min-width: 1100px) {
-    body{
-        font-size: 20px;
+    .page-nav-header{
+        display: flex;
     }
     .page-nav-header .img-container{
         padding: 0;
@@ -281,27 +550,92 @@ footer a{
         font-size: 38px;
     }
     .name-header p {
-        font-size: 20px;
+        font-size: 17px;
     }
     .page-nav-header{
-        font-size: 20px;
+        font-size: 17px;
     }
-    nav ul li{
-        margin: 2px;
+    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
+        max-width: 912px;
     }
-    .game-summary, .game-summary-borderless{
+    .text-container{
+        margin: 10px;
+    }
+    .top-bar .text-container{
+        max-width: 560px;
+    }
+    .top-bar .text-container h2, h2{
+        padding: 12px 0px 12px 0px;
+        font-size: 30px;
+    }
+    .text-container h3, h3{
+        font-size: 26px;
+        margin: 10px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    .top-bar .text-container p, .text-container p, div p, p{
+        padding: 0px;
+        margin: 10px;
+    }
+}
+@media only screen and (min-width: 1130px) {
+    .img-container, .top-bar .img-container{
+        min-width: 300px;
+        width: 300px;
+    }
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 300px;
+        min-height: 250px;
+        width: 300px;
+        height: 250px;
+        margin: 20px;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 88px;
+        margin: 15px;
+    }
+    .name-header{
+        margin: auto 0;
+    }
+    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
         max-width: 952px;
     }
-    #wide-nav-list{
-        display: inline-block;
+    .text-container{
+        margin: 20px 10px 20px 20px;
     }
-    #layered-nav-list{
-        display: none;
+    .top-bar .text-container{
+        max-width: 640px;
     }
+    .top-bar .text-container h2, h2{
+        padding: 12px 0px 12px 0px;
+        font-size: 36px;
+    }
+    .text-container h3, h3{
+        font-size: 28px;
+        margin: 15px;
+    }
+    h4{
+        font-size: 26px;
+    }
+    .text-container p, div p, p{
+        padding: 0px;
+        margin: 10px;
+    }
+    
 }
 @media only screen and (min-width: 1200px) {
     body{
         font-size: 20px;
+    }
+    .img-container-cropped, .top-bar .img-container-cropped{
+        min-width: 300px;
+        min-height: 300px;
+        width: 300px;
+        height: 300px;
+        margin: 20px;
     }
     .page-nav-header .img-container{
         width: 99px;
@@ -319,7 +653,6 @@ footer a{
     .page-nav-header{
         font-size: 20px;
     }
-    
     nav ul li{
         margin: 7px 5px 5px 5px;
     }
