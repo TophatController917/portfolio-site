@@ -28,74 +28,88 @@
     <script src="index.js"></script>
 
     <div class="top-bar">
-        <img src="" alt="">
+      <div class="img-container-cropped">
+        <a href="https://konarzno.itch.io/gordon-grappler"><img src="GordonGrapplerTop.png" alt=""></a>
+      </div>
+      <div class="text-container">
         <h2>Project Overview</h2>
         <p>Gordon Grappler is a cooking platformer where the player must use a grappling hook to navigate a kitchen, grab ingredients, and fill orders as they experience a typical day in the restaurant of the titular Gordon Grappler.</p>
         <p>I came up with and programmed the central mechanic of the game: a grappling hook that could be used to bring the player toward a target, grab ingredients and pull them toward the player and interact with levers, as well as a force-based player movement system using Unity's physics system.</p>
+      </div>
     </div>
     <article class="project-synopsis">
-        <h2>My Contributions to the Project:</h2>
-        <section>
-            <h3>Designed the Core Mechanic</h3>
-            <p>I came up with the idea to center the game around a grappling hook, and iterated upon that concept to refine it into the mechanic that it became. Some design challenges and their solutions included:</p>
-            <section>
-              <div class="img-container">
-
-              </div>
-              <div class="text-container">
-
-              </div>
-              <p>The grappling hook didn't feel connected to the game, and was only used on occasion as an extra tool for movement. A game's core mechanic should feel integrated into the rest of the game's systems.</p>
-              <p>To address this, we enabled the grappling hook to pick up ingredients and pull them to the player while still allowing the player to move freely.</p>
-              <p>This tied the grappling hook more tightly to the core gameplay loop by making it dramatically faster to grab ingredients with the hook, and also made the game flow much more smoothly, as getting an ingredient was no longer a huge commitment.</p>
-            </section>
-            <section>
-              <p>The speed of the game was too fast for players to keep up with, and a huge backlog of orders quickly piled up during playtests. We could have simply slowed the speed of the game, but I thought a better idea would be to allow the player to act faster.</p>
-              <p>Most of the backlog came as the result of the player needing to run to the levers and back every time they wanted to cook a meal, which wasted precious seconds that added up quickly.</p>
-              <p>To remedy this, we allowed the grappling hook to also use the lever, which eliminated a frustrating repetitive action, made the game flow better, and solved the pacing issue.</p>
-              <div class="img-container">
-
-              </div>
-              <div class="text-container">
-
-              </div>
-              </section>
+      <h2>My Contributions to the Project:</h2>
+      <section class="contribution-block-type2">
+        <div class="contribution-subblock">
+          <h3>Designed the Core Mechanic</h3>
+          <p>I came up with the idea to center the game around a grappling hook, and iterated upon that concept to refine it into the mechanic that it became. Some design challenges and their solutions included:</p>
+        </div>
+        <section class="contribution-subblock-type2">
+          <div class="img-container-cropped">
+            <img src="GordonGrapplerGameplay.gif" alt="">
+          </div>
+          <div class="text-container">
+            <p>The grappling hook didn't feel connected to the game, and was only used on occasion as an extra tool for movement. A game's core mechanic should feel integrated into the rest of the game's systems.</p>
+            <p>To address this, we enabled the grappling hook to pick up ingredients and pull them to the player while still allowing the player to move freely.</p>
+            <p>This tied the grappling hook more tightly to the core gameplay loop by making it dramatically faster to grab ingredients with the hook, and also made the game flow much more smoothly, as getting an ingredient was no longer a huge commitment.</p>
+          </div>
+            
         </section>
-        <section>
+        <section class="contribution-subblock-type2">
+          <div class="text-container">
+            <p>The speed of the game was too fast for players to keep up with, and a huge backlog of orders quickly piled up during playtests. We could have simply slowed the speed of the game, but I thought a better idea would be to allow the player to act faster.</p>
+            <p>Most of the backlog came as the result of the player needing to run to the levers and back every time they wanted to cook a meal, which wasted precious seconds that added up quickly.</p>
+            <p>To remedy this, we allowed the grappling hook to also use the lever, which eliminated a frustrating repetitive action, made the game flow better, and solved the pacing issue.</p>
+          </div>
+          <div class="img-container-cropped">
+            <img src="GordonGrapplerLever.gif" alt="">
+          </div>
+        </section>
+        </section>
+        <section class="contribution-block-type2">
+          <div class="contribution-subblock">
             <h3>Programmed the Grappling Hook and Player Movement</h3>
             <p>I developed a movement system for the player that utilized Unity's 2D physics system, and a modular grappling hook that could interact with the environment.</p>
-            <section>
-              <div class="img-container">
-
-              </div>
-              <div class="text-container">
-
-              </div>
-              <p>TWhen developing the movement, I opted to use a force-based system instead of a velocity-based system. This allowed for realistic and intuitive momentum, as well as creating smooth acceleration.</p>
+          </div>
+          <section class="contribution-subblock-type2">
+            <div class="img-container">
+              <img src="GordonGrapplerControl.png" alt="">
+            </div>
+            <div class="text-container">
+              <p>When developing the movement, I opted to use a force-based system instead of a velocity-based system. This allowed for realistic and intuitive momentum, as well as creating smooth acceleration.</p>
               <p>The top speed, acceleration and friction values were made easily editable in the Unity Inspector so designers could fine-tune movement to get the perfect feel.</p>
               <p>Integrating the movement with Unity's 2D physics also meant that designers could easily change the mass and gravity of the object and movement would respond accordingly with no edits needed.</p>
-            </section>
-            <section>
-                <p>To create the grappling hook, I made a modular script and prefab that could be attached to any object and would work on its own. This meant that designers were free to make any edits to the player's natural movement without altering the grappling hook's movement, and vice versa..</p>
-                <p>The grappling hook could additionally detect what objects it was attaching to, which enabled it to perform a variety of tasks, including: moving the player, moving certain interactable objects, and calling a function on other interactable objects.</p>
-                <img src="" alt="">
-            </section>
+            </div>
+          </section>
+          <section class="contribution-subblock-type2">
+            <div class="text-container">
+              <p>To create the grappling hook, I made a modular script and prefab that could be attached to any object and would work on its own. This meant that designers were free to make any edits to the player's natural movement without altering the grappling hook's movement, and vice versa.</p>
+              <p>The grappling hook could additionally detect what objects it was attaching to, which enabled it to perform a variety of tasks, including: moving the player, moving certain interactable objects, and calling a function on other interactable objects.</p>
+            </div>
+            <div class="img-container">
+              <img src="GordonGrapplerCode.png" alt="">
+            </div>
+          </section>
         </section>
-        <section>
-            <h3>What I learned</h3>
-            <p>While this wasn't my first project, it was the first project that I made for a Game Jam. I hadn't dealt with a 48-hour deadline, and I was meeting most of the people on my team for the first time. This experience gave me valuable skills:</p>
-            <section>
-                <h4>Staying up-to-date in a fast-paced environment</h4>
-                <p>The pace of work for the Game Jam meant that things were always changing in some part of the project, so I always made sure to know what we were all working on and what work was still remaining.</p>
-                <p>One thing I struggled with, however, was maintaining communication when I wasn't actively working. When I came back to work, I needed to get caught up on what I missed before I could start working again. In order to address this, I checked in with my teammates to stay up-to-date.</p>
-                <p>This project taught me how communication goes beyond just what happens while I'm working, something I have kept in mind since.</p>
-            </section>
-            <section>
-                <h4>Efficiency during crunch time</h4>
-                <p>The short time frame we had to work with was very instructive in how to manage my time effectively. In particular, I learned how essential it was to have a plan before I began working.</p>
-                <p>Making sure I knew which jobs needed to be done in what order, how long each job was estimated to take, and how essential each job was to the final product meant that I was able to operate much more efficiently.</p>
-                <p>Additionally, understanding task interdependencies allowed me to prioritize work that would unblock my teammates, making the group as a whole more efficient.</p>
-            </section>
+        <section class="contribution-block-type2">
+          <h3>What I learned</h3>
+          <p>While this wasn't my first project, it was the first project that I made for a Game Jam. I hadn't dealt with a 48-hour deadline, and I was meeting most of the people on my team for the first time. This experience gave me valuable skills:</p>
+          <section class="contribution-subblock">
+            <div class="text-container">
+              <h4>Staying up-to-date in a fast-paced environment</h4>
+              <p>The pace of work for the Game Jam meant that things were always changing in some part of the project, so I always made sure to know what we were all working on and what work was still remaining.</p>
+              <p>One thing I struggled with, however, was maintaining communication when I wasn't actively working. When I came back to work, I needed to get caught up on what I missed before I could start working again. In order to address this, I checked in with my teammates to stay up-to-date.</p>
+              <p>This project taught me how communication goes beyond just what happens while I'm working, something I have kept in mind since.</p>
+            </div>
+          </section>
+          <section class="contribution-subblock">
+            <div class="text-container">
+              <h4>Efficiency during crunch time</h4>
+              <p>The short time frame we had to work with was very instructive in how to manage my time effectively. In particular, I learned how essential it was to have a plan before I began working.</p>
+              <p>Making sure I knew which jobs needed to be done in what order, how long each job was estimated to take, and how essential each job was to the final product meant that I was able to operate much more efficiently.</p>
+              <p>Additionally, understanding task interdependencies allowed me to prioritize work that would unblock my teammates, making the group as a whole more efficient.</p>
+            </div>
+          </section>
         </section>
     </article>
     <footer>

@@ -47,11 +47,13 @@ a{
     font-size: 52px;
     font-weight: bold;
     margin: 7px 0 2px 9px;
+    color: rgb(221, 240, 255);
 }
 .page-nav-header .name-header p{
     font-size: 19px;
     font-weight: bold;
     margin: 5px 0 0 9px ;
+    color: rgb(221, 240, 255);
 }
 .page-nav-header nav{
     width: 50%;
@@ -76,7 +78,7 @@ div section{
     margin: 0 auto;
 }
 article{
-    max-width: 932px;
+    max-width: 952px;
     margin: 0 auto 0 auto;
 }
 
@@ -106,7 +108,7 @@ article{
 }
 .top-bar .text-container{
     max-width: 632px;
-    margin: 0 0 0 20px;
+    margin: auto 0 auto 20px;
 }
 .top-bar .text-container h2{
     font-size: 36px;
@@ -138,27 +140,29 @@ article{
     text-align: center;
     font-size: 36px;
 }
-.contribution-overview h3{
+.contribution-block h3, .contribution-subblock h3, .contribution-block-type2 h3{
     text-align: center;
     font-size: 32px;
 }
 .contribution-block{
     display: flex;
 }
-.contribution-block .img-container-cropped{
+.contribution-block .img-container{
+    margin: auto 20px;
+}
+.img-container-cropped{
     min-width: 300px;
     min-height: 300px;
     width: 300px;
     height: 300px;
     overflow: hidden;
-    margin: 20px;
+    margin: auto 20px;
 
 }
-.contribution-block .img-container-cropped img{
+.img-container-cropped img{
     margin: 0 0 0 -36%;
     height: 100%;
 }
-
 
 .contribution-subblock{
     max-width: 95%;
@@ -168,6 +172,17 @@ article{
     font-size: 24px;
     margin: 0;
 }
+.contribution-subblock-type2{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+}
+.contribution-subblock-type2 .img-container{
+    width: 300px;
+    min-width: 350px;
+    margin: auto 0 auto 20px;
+}
+
 
 
 
@@ -186,6 +201,7 @@ footer a{
     color: rgb(33, 45, 64);
     font-size: 20px;
     margin: 40px;
+    text-decoration: underline;
 }
 
 /* Add screen styles below */
