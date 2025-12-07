@@ -258,7 +258,7 @@ footer a{
         padding: 0;
         width: 66px;
         min-width: 66px;
-        margin: auto 20px;
+        margin: auto 10px;
         grid-row-end: span 2;
     }
     .name-header{
@@ -279,7 +279,7 @@ footer a{
         margin: 4px 0 0;
     }
     nav ul li{
-        margin: 3px;
+        margin: 2px;
     }
     .game-summary, .game-summary-borderless, .contribution-block, article{
         max-width: 400px;
