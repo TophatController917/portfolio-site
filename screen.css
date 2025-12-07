@@ -74,7 +74,7 @@ div section{
     max-width: 932px;
     margin: 0 auto;
 }
-article{
+#about{
     max-width: 952px;
     margin: 0 auto 0 auto;
 }
@@ -283,7 +283,7 @@ footer a{
     nav ul li{
         margin: 2px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, article{
+    .game-summary, .game-summary-borderless, .contribution-block, #about{
         max-width: 400px;
     }
     .text-container{
@@ -383,7 +383,7 @@ footer a{
     nav ul li{
         margin: 5px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, article{
+    .game-summary, .game-summary-borderless, .contribution-block, #about{
         max-width: 500px;
     }
     .text-container{
@@ -481,7 +481,7 @@ footer a{
     nav ul li{
         margin: 4px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
         max-width: 684px;
     }
     .text-container{
@@ -559,7 +559,7 @@ footer a{
     .page-nav-header{
         font-size: 17px;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
         max-width: 912px;
     }
     .text-container{
@@ -604,7 +604,7 @@ footer a{
     .name-header{
         margin: auto 0;
     }
-    .game-summary, .game-summary-borderless, .contribution-block, article, .top-bar .text-container{
+    .game-summary, .game-summary-borderless, .contribution-block, #about, .top-bar .text-container{
         max-width: 952px;
     }
     .text-container{
