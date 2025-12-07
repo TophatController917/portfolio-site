@@ -271,6 +271,7 @@ footer a{
     }
     .name-header h1{
         font-size: 24px;
+        margin: 0;
     }
     .name-header p {
         font-size: 10px;
@@ -369,9 +370,11 @@ footer a{
     }
     .name-header h1{
         font-size: 34px;
+        margin: 7px 0 2px 9px;
     }
     .name-header p {
         font-size: 14px;
+        margin: 7px 0 2px 9px;
     }
     nav ul{
         margin: 4px 0 0;
