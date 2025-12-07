@@ -39,31 +39,28 @@ a{
     padding: 3px 25px 0 20px;
     margin: 20px;
 }
-.page-nav-header .name-header{
-    font-size: 100%;
-    margin: auto 0 auto 30px;
+.page-nav-header nav{
+    margin: auto 0 auto auto;
+    text-align: right;
 }
-.page-nav-header .name-header h1{
+.name-header{
+    margin: auto 0;
+}
+.name-header h1{
     font-size: 52px;
     font-weight: bold;
     margin: 7px 0 2px 9px;
     color: rgb(221, 240, 255);
 }
-.page-nav-header .name-header p{
-    font-size: 19px;
+.name-header p{
     font-weight: bold;
     margin: 5px 0 0 9px ;
     color: rgb(221, 240, 255);
 }
-.page-nav-header nav{
-    width: 50%;
-    margin: auto 0 auto auto;
-    text-align: right;
+nav ul{
+    padding: 0;
 }
-.page-nav-header nav ul{
-    justify-content: right;
-}
-.page-nav-header nav ul li{
+nav ul li{
     display: inline-block;
     margin: 14px 10px 10px 10px;
 }
@@ -91,7 +88,6 @@ article{
     margin: 6px 0 0 5px;
 }
 .text-container p{
-    font-size: 20px;
     padding: 10px 0px 10px 0px;
     margin: 0 0 0 5px;
 }
@@ -115,7 +111,6 @@ article{
     padding: 21px 0px 12px 0px;
 }
 .top-bar .text-container p{
-    font-size: 20px;
     padding: 6px 0px 20px 0px;
 }
 
@@ -211,9 +206,138 @@ footer .text-container{
 }
 footer a{
     color: rgb(33, 45, 64);
-    font-size: 20px;
     margin: 40px;
     text-decoration: underline;
 }
 
 /* Add screen styles below */
+@media only screen and (min-width: 768px) {
+    body{
+        font-size: 17px;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 77px;
+        min-width: 77px;
+        margin: 15px;
+    }
+    .name-header{
+        margin: auto 0;
+    }
+    .name-header h1{
+        font-size: 32px;
+    }
+    .name-header p {
+        font-size: 17px;
+    }
+    .page-nav-header{
+        font-size: 17px;
+    }
+    nav ul li{
+        margin: 2px;
+    }
+    .game-summary, .game-summary-borderless{
+        max-width: 734px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    body{
+        font-size: 17px;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 88px;
+        margin: 15px;
+    }
+    .name-header{
+        margin: auto 0;
+    }
+    .name-header h1{
+        font-size: 38px;
+    }
+    nav ul li{
+        margin: 2px;
+    }
+    #wide-nav-list{
+        display: none;
+    }
+    #layered-nav-list{
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 1100px) {
+    body{
+        font-size: 20px;
+    }
+    .page-nav-header .img-container{
+        padding: 0;
+        width: 88px;
+        margin: 15px;
+    }
+    .name-header{
+        margin: auto 0;
+    }
+    .name-header h1{
+        font-size: 38px;
+    }
+    .name-header p {
+        font-size: 20px;
+    }
+    .page-nav-header{
+        font-size: 20px;
+    }
+    nav ul li{
+        margin: 2px;
+    }
+    .game-summary, .game-summary-borderless{
+        max-width: 952px;
+    }
+    #wide-nav-list{
+        display: inline-block;
+    }
+    #layered-nav-list{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }
+    .page-nav-header .img-container{
+        width: 99px;
+        padding: 0 15px;
+    }
+    .name-header{
+        margin: auto 0;
+    }
+    .name-header h1{
+        font-size: 44px;
+    }
+    .name-header p {
+        font-size: 20px;
+    }
+    .page-nav-header{
+        font-size: 20px;
+    }
+    
+    nav ul li{
+        margin: 7px 5px 5px 5px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .page-nav-header .img-container{
+        padding: 0 25px;
+    }
+    .name-header h1{
+        font-size: 52px;
+    }
+    .name-header p {
+        font-size: 20px;
+    }
+    .page-nav-header{
+        font-size: 20px;
+    }
+    nav ul li{
+        margin: 14px 10px 10px 10px;
+    }
+}
